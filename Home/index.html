@@ -4,184 +4,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Abismo Sonoro - Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="container">
+
+  <nav class="navbar">
+    <div class="nav-logo">Abismo Sonoro</div>
+    
     <div class="input-group">
       <div class="input-icon">
         <i class="fa-solid fa-headphones"></i>
       </div>
-
-      <input type="text" id="search" class="input-field" placeholder="Nome do artista, banda, música">
+      <input type="text" id="search" class="input-field" placeholder="Nome do artista, banda...">
     </div>
+  </nav>
+
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?q=80&w=1200&auto=format&fit=crop" alt="Rock banner">
+      <div class="carousel-caption">
+        <h1>O Abismo do Rock n' Roll</h1>
+        <p>Explore o catálogo das maiores lendas da música.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divisor">
+
+  <main id="container">
+    <h2 class="section-title">Bandas no Catálogo</h2>
 
     <ul class="items">
       <li class="item">
-        <div class="item-image">
-          <img src="/images/arcticMonkeys.jpg" alt="Arctic Monkeys">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Arctic Monkeys
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (2002)
-          </p>
-
-          <p class="item-description">
-            Arctic Monkeys é uma banda britânica de indie rock formada em 2002, conhecida por seus grandes sucessos no rock alternativo.
-          </p>
-        </div>
+        <a href="arctic-monkeys.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/arcticMonkeys.jpg" alt="Arctic Monkeys">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Arctic Monkeys</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (2002)</p>
+            <p class="item-description">Arctic Monkeys é uma banda britânica de indie rock formada em 2002, conhecida por seus grandes sucessos no rock alternativo.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/guns.jpg" alt="Guns N’ Roses">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Guns N’ Roses
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (1985)
-          </p>
-
-          <p class="item-description">
-            Guns N' Roses é uma banda americana de hard rock formada em 1985, conhecida por clássicos como Sweet Child O' Mine e November Rain.          </p>
-        </div>
+        <a href="guns-n-roses.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/guns.jpg" alt="Guns N’ Roses">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Guns N’ Roses</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (1985)</p>
+            <p class="item-description">Guns N' Roses é uma banda americana de hard rock formada em 1985, conhecida por clássicos como Sweet Child O' Mine e November Rain.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/maneskin.jpg" alt="Maneskin imagem">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Måneskin
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (2016)
-          </p>
-
-          <p class="item-description">
-            Måneskin é uma banda italiana de rock formada em 2016, conhecida por sucessos como Beggin' e I WANNA BE YOUR SLAVE.          </p>
-        </div>
+        <a href="maneskin.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/maneskin.jpg" alt="Måneskin">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Måneskin</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (2016)</p>
+            <p class="item-description">Måneskin é uma banda italiana de rock formada em 2016, conhecida por sucessos como Beggin' e I WANNA BE YOUR SLAVE.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/motherMother.jpg" alt="Mother Mother">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Mother Mother
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (2005)
-          </p>
-
-          <p class="item-description">
-            Mother Mother é uma banda canadense de indie rock formada em 2005, conhecida por músicas como Hayloft e Verbatim.          </p>
-        </div>
+        <a href="mother-mother.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/motherMother.jpg" alt="Mother Mother">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Mother Mother</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (2005)</p>
+            <p class="item-description">Mother Mother é uma banda canadense de indie rock formada em 2005, conhecida por músicas como Hayloft e Verbatim.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/nirvana.jpg" alt="Nirvana">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Nirvana
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (1987)
-          </p>
-
-          <p class="item-description">
-            Nirvana é uma banda americana de grunge formada em 1987, conhecida por clássicos como Smells Like Teen Spirit e Come As You Are.          </p>
-        </div>
+        <a href="nirvana.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/nirvana.jpg" alt="Nirvana">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Nirvana</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (1987)</p>
+            <p class="item-description">Nirvana é uma banda americana de grunge formada em 1987, conhecida por clássicos como Smells Like Teen Spirit e Come As You Are.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/queen.jpg" alt="Queen image">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Queen
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (1970)
-          </p>
-
-          <p class="item-description">
-            Queen é uma banda britânica de rock formada em 1970, conhecida por clássicos como Bohemian Rhapsody e We Will Rock You.          </p>
-        </div>
+        <a href="queen.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/queen.jpg" alt="Queen">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Queen</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (1970)</p>
+            <p class="item-description">Queen é uma banda britânica de rock formada em 1970, conhecida por clássicos como Bohemian Rhapsody e We Will Rock You.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/radioHead.avif" alt="Radio Head image">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            Radio Head
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (1985)
-          </p>
-
-          <p class="item-description">
-            Radiohead é uma banda britânica de rock alternativo formada em 1985, conhecida por sucessos como Creep e No Surprises.          </p>
-        </div>
+        <a href="radiohead.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/radioHead.avif" alt="Radio Head">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">Radio Head</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (1985)</p>
+            <p class="item-description">Radiohead é uma banda britânica de rock alternativo formada em 1985, conhecida por sucessos como Creep e No Surprises.</p>
+          </div>
+        </a>
       </li>
 
       <li class="item">
-        <div class="item-image">
-          <img src="/images/systemOfADown.jpg" alt="System Of a Down image">
-        </div>
-
-        <div class="item-content">
-          <h2 class="item-title">
-            System Of A Down
-          </h2>
-
-          <p class="item-subtitle">
-            <i class="fa-solid fa-music"></i>
-            Banda (1994)
-          </p>
-
-          <p class="item-description">
-            System of a Down é uma banda de metal alternativo formada em 1994, conhecida por sucessos como Chop Suey! e Toxicity.          </p>
-        </div>
+        <a href="system-of-a-down.html" class="item-link">
+          <div class="item-image">
+            <img src="/images/systemOfADown.jpg" alt="System Of a Down">
+          </div>
+          <div class="item-content">
+            <h2 class="item-title">System Of A Down</h2>
+            <p class="item-subtitle"><i class="fa-solid fa-music"></i> Banda (1994)</p>
+            <p class="item-description">System of a Down é uma banda de metal alternativo formada em 1994, conhecida por sucessos como Chop Suey! e Toxicity.</p>
+          </div>
+        </a>
       </li>
     </ul>
-  </div>
+  </main>
 
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
